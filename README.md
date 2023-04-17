@@ -1,3 +1,7 @@
+# このリポジトリは何？
+
+・reactでログインする簡単なアプリのサンプル
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
