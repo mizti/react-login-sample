@@ -1,6 +1,7 @@
 # このリポジトリは何？
 
 ・reactでログインする簡単なアプリのサンプル
+・インフラとしてFirebaseとFirestore、認証としてGoogle認証を利用
 
 # Getting Started with Create React App
 
