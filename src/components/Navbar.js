@@ -9,11 +9,16 @@ const Navbar = ({ isAuth }) => {
     return (
         <nav>
             <Link to="/"><FontAwesomeIcon icon={faHome} />ホーム</Link>
-            <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />記事投稿</Link>
-            {!isAuth  ?
-            <Link to="/login"><FontAwesomeIcon icon={faArrowRightToBracket} />ログイン</Link>
-            :
-            <Link to="/logout"><FontAwesomeIcon icon={faArrowLeft} />ログアウト</Link>}
+
+            {!isAuth ?
+                <Link to="/login"><FontAwesomeIcon icon={faArrowRightToBracket} />ログイン</Link>
+                :
+                (
+                    <>
+                        <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />記事投稿</Link>
+                        <Link to="/logout"><FontAwesomeIcon icon={faArrowLeft} />ログアウト</Link>
+                    </>
+                )}
         </nav>
     );
 }
